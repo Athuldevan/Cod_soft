@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Athul's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="header-content">
+            <h1>Hi, I'm Athul</h1>
+            <p>Final Year Computer Science Student | MERN Stack Developer</p>
+            <a href="#projects" class="btn">View My Work</a>
+        </div>
+    </header>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>I am a final-year Computer Science student with a passion for web development. I specialize in HTML, CSS, JavaScript, and Bootstrap, and I'm currently exploring the MERN stack. With over 8+ projects completed, I'm always looking for new challenges to improve my skills.</p>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="projects-grid">
+            <!-- Add your projects here -->
+            <div class="project">
+                <h3>TO DO</h3>
+                <p>A to do application with JavaScript.User can add delete tasks and it have nice user interface
+                    <br> <a href="to-do-woad-nine.vercel.app">TO-DO</a> </p>
+            </div>
+            <div class="project">
+                <h3>CALCULATOR</h3>
+                <p>A calculator html css JavaScript.It has a nice interface ,where user can add ,substract,multiply.
+                    <a href="calculator-red-six.vercel.app">Calculator </a>
+                </p>
+            </div>
+            <div class="project">
+                <h3>NUMBER GURSSING GAME </h3>
+                <p>A number guessing game with html  css JavaScript.This project imptoved my Dom Manipulation skills in JavaScript. <a href="https://number-guessing-game-sand.vercel.app/">Number guessing game </a></p>
+            </div>
+            <!-- Repeat the above block for more projects -->
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form action="submit_form.php" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <button type="submit" class="btn">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Athul. All rights reserved.</p>
+    </footer>
+</body>
+</html>

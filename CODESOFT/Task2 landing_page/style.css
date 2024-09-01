@@ -1,0 +1,329 @@
+/* fonts link  */
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
+/* Resets style  */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+:root{
+    --main-color:#e3e8e4;
+    --primary-color:#363636;
+    --main-font:"Playfair Display",serif;
+
+}
+/* nav section  */
+nav{
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+    text-align: center;
+    font-family: sans-serif;
+    padding: 1.5rem
+}
+ul>li{
+   display: inline;
+   list-style: none;
+
+}
+ul>li>a{
+    text-decoration: none;
+    margin: 2rem;
+    color: #000;
+}
+ul>li>a:hover{
+    border-bottom: 2.5px solid var(--primary-color);
+}
+.btn-fill{
+    padding :10px 30px;
+    background-color: var(--primary-color);
+    border: none;
+    border-radius: 100px;
+    color: var(--main-color);
+    font-size: 1rem;
+}
+   /* nav end  */
+          /* Header section  */
+.btn-outline{
+    background: transparent;
+    border: none;
+    margin-left: 1.5rem;
+    font-weight: bold;
+    cursor: pointer;
+}          
+header{
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.content-container{
+    margin-left: 8rem;
+    
+
+}
+.main-heading{
+    font-size: 5rem;
+    font-family: var(--main-font);
+    color: #0000004f;
+    margin-bottom: 3rem;
+    font-weight: bold;
+}
+.main-heading>span{
+    color: #000;
+}
+.primary-heading{
+    max-width:400px;
+    line-height: 1.5rem;
+    margin-bottom: 2rem;
+}
+.img-container{
+    width: 500px;
+    height: 500px;
+    background-color: var(--main-color);
+    border-radius: 100%;
+}
+.img-container>img{
+    width: 400px;
+    height: 500px;
+    margin-bottom: 50px;
+}
+/* header end  */
+
+
+/* popularity section start  */
+.popularity{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: 100vh;
+    
+}
+.popularity>div{
+    margin: 8rem;
+    background-color:#e3e8e4fa;
+    text-align: center;
+    height: 21rem;
+    width: 21rem;
+    border-radius: 100px;
+}
+.popularity>div>h1{
+    font-size: 3rem;
+    text-align: center;
+    color: #363636;
+    font-family: var(--main-font);
+    margin-bottom: 50%;
+
+}
+.popularity>div>p{
+    color: #363636;
+    font-family: sans-serif;
+    margin-bottom: 50%;
+}
+/* popularity section ended*/
+
+/* products */
+/* .products-heading{
+    width: 100vw;
+    height : 100vh;
+    background-color: aqua;
+} */
+ .products{
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+    flex-wrap: wrap;
+ }
+ .product{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 4rem;
+    transition: transform 8s ease-out;
+    transition: background-color 38 ease-in;
+ }
+ .product>.img-layer:hover{
+   transform: scale(1.2);
+   
+ }
+ .product>.img-layer{
+    background:var(--main-color);
+    border-top-left-radius: 200px;
+    border-top-right-radius: 200px;
+ }
+ .product>.img-layer>.img{
+    width: 200px;
+    height: 200px;
+ }
+ .img-one{
+    background: url(images/scott-webb-eD853mTbBA0-unsplash-removebg-preview.png);
+    background-size: cover;
+    background-position: center;
+ }
+ .img-two{
+    background: url(images/daniil-silantev-1P6AnKDw6S8-unsplash-removebg-preview.png);
+    background-size: cover;
+    background-position: center;
+ }
+ .img-three{
+    background: url(images/bruno-emmanuelle--MUoHL1XULM-unsplash-removebg-preview.png);
+    background-size: cover;
+    background-position: center;
+ }
+ .img-four{
+    background: url(images/pexels-ron-lach-8346055-removebg-preview.png);
+    background-size: cover;
+    background-position: center;
+ }
+ .product>.img:hover{
+    scale:1;
+    
+ }
+ .product-content{
+    padding: 28px;
+    background-color: var(--primary-color);
+    color: #fff;
+    padding-bottom: 50px;
+    text-align: center;
+
+ }
+ .product-content:hover{
+   background-color: #fff;
+   color: #000;
+   border: 2px solid #000;
+
+ }
+ .product-name{
+    font-family: var(--main-font);
+    margin-bottom: 1rem;
+ }
+ .btn-container{
+    text-align: center;
+ }
+ .btn-container>button{
+    border: none;
+    background: transparent;
+    font-size: 2rem;
+    cursor: pointer;
+    margin: 0 auto;
+    margin-top:2rem;
+    margin-left: 20px;
+    margin-top: 5rem;
+    
+ }
+ /* product section ended */
+
+ /* why us section  */
+ img-container{
+    border: 2px solid red;
+    height: 100px;
+    width: 100px;
+ }
+ .why-us>.image-container{
+    margin-top: 8rem;
+    
+ }
+ .why-us>.img-layer{
+    
+ }
+ .cards{
+    display: grid;
+    flex-wrap: wrap;
+    align-items: center;
+    grid-template-columns: 2fr 2fr;
+    justify-content: center;
+    
+ }
+ .first-card{
+    width: 200px;
+    height: 200px;
+    padding: 20px;
+    margin-top: 40px;
+    border-radius: 5px;
+    background-color: var(--primary-color);
+    color: #fff;
+    margin: 2rem;
+    transition: transform 1s ease;
+ }
+ .Why-us>.primary-heading{
+    font-size: 5rem;
+ }
+ .why-us{
+    display: flex;
+    margin-top: 8rem;
+ }
+ .Why-us>.primary-heading{
+    max-width: 100px;
+    margin-top: 8rem;
+ }
+ .first-card:hover{
+    transform: scale(1.2);
+    background-color: var(--main-color);
+    color: #000;
+
+ }
+  /* why us section endede  */
+
+
+  /* features-section setart  */
+  .features{
+   display: flex;
+   align-items: center;
+   margin-left: 5rem;
+   flex-wrap: wrap;
+   margin-top: 8rem;
+  }
+
+
+
+
+
+  /* features-section-ended  */
+  .right-section{
+   display: flex;
+   flex-wrap: wrap;
+   /* margin-right: 8rem; */
+   align-items: flex-end;
+   justify-content: flex-end;
+   position: relative;
+  }
+  /*
+
+
+    MEDIA QUERIES
+  */
+  @media only screen and (max-width:900pxx){
+   header{
+      height: 120vh;
+      text-align: center;
+      justify-content: center;
+      width: 120vh;
+   }
+   header>content-container{
+      margin-bottom: 6rem;
+      margin-top:  4rem;
+   }
+   header>a{
+      display: inline;
+      width: 120vh;
+      height: 120vh;
+   }
+   .popularity{
+
+      text-align: center;
+
+   }
+  }
+  @media only screen max-width(600px )
+{
+   .primary-heading{
+      width: 350px;
+
+   }
+   .img-container{
+      width: 300px;
+      height: 300px;
+   }
+} 
